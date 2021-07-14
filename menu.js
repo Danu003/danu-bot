@@ -7,7 +7,7 @@ let fs = require ('fs')
 let path = require('path')
 let handler  = async (m, { conn, usedPrefix: _p }) => {											
 let RendyGanteng = conn
-  await RendyGanteng.fakeReply(m.chat, '```Orang Sabar Disayang Dajjal```', '0@s.whatsapp.net', '*Creator : Danuu*')
+  await RendyGanteng.fakeReply(m.chat, 'Subscribe : https://youtube.com/channel/UCZpbSICdJSqQklQabkW2QSA', '0@s.whatsapp.net', '*Creator : Danuu*')
   let RendyGans = './src/avatar_contact.png'
   let nomor = 'wa.me/62895337278647'
   let sosmed = 'RC047'
@@ -77,9 +77,9 @@ let RendyGanteng = conn
           if (menu.help) groups[tag].push(menu)
     }
     conn.menu = conn.menu ? conn.menu : {}
-    let before = conn.menu.before || `Creator : *©Danu2k21* 👑\n\n\n`
+    let before = conn.menu.before || `Creator : *Danuu Tamvan*\n\n%readmore\n`
     let header = conn.menu.header || '*[%category]*\n'
-    let body   = conn.menu.body   || '• _%cmd_'
+    let body   = conn.menu.body   || '➺[♟] *%cmd*'
     let footer = conn.menu.footer || '\n'
     let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Bot Asli :\nwa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
     let _text  = before + ''
